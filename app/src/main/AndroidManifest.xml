@@ -9,15 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RickAndMortyCaracters">
+
         <activity
-            android:name="kz.mihael3d.rickandmortycharacters.MainActivity"
+            android:name=".screens.splash.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".screens.main.MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
