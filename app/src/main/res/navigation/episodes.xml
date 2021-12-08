@@ -10,4 +10,7 @@
         android:name="kz.mihael3d.rickandmortycharacters.screens.main.tabs.episodes.EpisodesFragment"
         android:label="fragment_episodes"
         tools:layout="@layout/fragment_episodes" />
+    <argument
+        android:name="ShowAppBar"
+        android:defaultValue="true" />
 </navigation>

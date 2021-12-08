@@ -10,4 +10,7 @@
         android:name="kz.mihael3d.rickandmortycharacters.screens.main.tabs.locations.LocationsFragment"
         android:label="fragment_locations"
         tools:layout="@layout/fragment_locations" />
+    <argument
+        android:name="ShowAppBar"
+        android:defaultValue="true" />
 </navigation>
