@@ -10,6 +10,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import kz.mihael3d.rickandmortycharacters.data.api.CharacterApi
+import kz.mihael3d.rickandmortycharacters.data.api.EpisodeApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -58,5 +59,10 @@ class NetworkModule {
     @Singleton
     fun providesCharacterApi(retrofit: Retrofit) : CharacterApi =
         retrofit.create(CharacterApi::class.java)
+
+    @Provides
+    @Singleton
+    fun providesEpisodeApi(retrofit: Retrofit) : EpisodeApi =
+        retrofit.create(EpisodeApi::class.java)
 
 }

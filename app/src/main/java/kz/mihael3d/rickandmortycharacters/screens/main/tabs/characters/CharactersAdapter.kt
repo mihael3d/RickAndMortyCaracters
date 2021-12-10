@@ -51,19 +51,13 @@ class CharactersAdapter @Inject constructor() :
                         .with(ivAvatar.context)
                         .load(item.image)
                         .centerInside()
-//                        .centerCrop()
-//                        .placeholder(R.drawable.ic_profile)
                         .into(ivAvatar)
                     tvStatus.text = item.status.toString()
 
                     setDrawableToMaterialTextView(tvStatus, item.status)
                     ViewCompat.setTransitionName(ivAvatar, "avatar_${item.id}")
                     ViewCompat.setTransitionName(tvName, "name_${item.id}")
-//                    when(item.status){
-//                        Status.ALIVE -> tvStatus.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_profile,0,0,0)
-//                        Status.DEAD -> tvStatus.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_dashboard,0,0,0)
-//                        Status.UNKNOWN -> tvStatus.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_settings,0,0,0)
-//                    }
+
                 }
             }
     }
