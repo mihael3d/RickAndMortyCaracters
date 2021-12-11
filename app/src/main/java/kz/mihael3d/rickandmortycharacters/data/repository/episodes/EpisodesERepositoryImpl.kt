@@ -11,20 +11,16 @@ import kz.mihael3d.rickandmortycharacters.data.model.entites.Episode
 import kz.mihael3d.rickandmortycharacters.data.paging.EpisodeRemoteMediator
 import javax.inject.Inject
 
-
 @ExperimentalPagingApi
 class EpisodesERepositoryImpl
     @Inject constructor(
         private val service: EpisodeApi,
         private val db: AppDB
-    ): EpisodesRepository {
-
-
-
+    ) : EpisodesRepository {
 
     override fun getAllEpisodes(): Flow<PagingData<Episode>> = Pager(
-    config = PagingConfig(pageSize = 20, prefetchDistance = 2),
-    remoteMediator = EpisodeRemoteMediator(service, db)
+        config = PagingConfig(pageSize = 20, prefetchDistance = 2),
+        remoteMediator = EpisodeRemoteMediator(service, db)
     ) {
         db.episodeDao().getEpisodesPagingSource()
     }.flow

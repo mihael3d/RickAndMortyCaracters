@@ -9,6 +9,8 @@ import kz.mihael3d.rickandmortycharacters.data.repository.charaters.CharactersRe
 import kz.mihael3d.rickandmortycharacters.data.repository.charaters.CharactersRepositoryImpl
 import kz.mihael3d.rickandmortycharacters.data.repository.episodes.EpisodesERepositoryImpl
 import kz.mihael3d.rickandmortycharacters.data.repository.episodes.EpisodesRepository
+import kz.mihael3d.rickandmortycharacters.data.repository.locations.LocationsRepository
+import kz.mihael3d.rickandmortycharacters.data.repository.locations.LocationsRepositoryImpl
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -26,4 +28,10 @@ abstract class RepositoryModule {
         episodesRepository: EpisodesERepositoryImpl
     ) : EpisodesRepository
 
+
+    @ExperimentalPagingApi
+    @Binds
+    abstract fun bindLocationsRepository(
+        locationsRepositoryImpl: LocationsRepositoryImpl
+    ) : LocationsRepository
 }

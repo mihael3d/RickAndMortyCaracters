@@ -5,19 +5,27 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kz.mihael3d.rickandmortycharacters.data.db.convectors.StringConverter
 import kz.mihael3d.rickandmortycharacters.data.db.dao.EpisodeDao
-import kz.mihael3d.rickandmortycharacters.data.db.dao.PageKeyDao
+import kz.mihael3d.rickandmortycharacters.data.db.dao.EpisodePageKeyDao
+import kz.mihael3d.rickandmortycharacters.data.db.dao.LocationDao
+import kz.mihael3d.rickandmortycharacters.data.db.dao.LocationPageKeyDao
 import kz.mihael3d.rickandmortycharacters.data.model.entites.Episode
-import kz.mihael3d.rickandmortycharacters.data.model.entites.PageKey
+import kz.mihael3d.rickandmortycharacters.data.model.entites.EpisodePageKey
+import kz.mihael3d.rickandmortycharacters.data.model.entites.Location
+import kz.mihael3d.rickandmortycharacters.data.model.entites.LocationPageKey
 
-@Database(entities = [Episode::class, PageKey::class], version = 1, exportSchema = false)
+@Database(entities = [
+    Episode::class, EpisodePageKey::class,
+    Location::class, LocationPageKey::class
+                     ], version = 2, exportSchema = false)
 @TypeConverters(StringConverter::class)
 abstract class AppDB: RoomDatabase() {
 
     abstract fun episodeDao(): EpisodeDao
-    abstract fun pageKeyDao(): PageKeyDao
+    abstract fun episodePageKeyDao(): EpisodePageKeyDao
+    abstract fun locationDao(): LocationDao
+    abstract fun locationPageKeyDao(): LocationPageKeyDao
 
 
     companion object{

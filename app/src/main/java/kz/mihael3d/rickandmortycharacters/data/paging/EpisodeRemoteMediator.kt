@@ -9,13 +9,13 @@ import androidx.room.withTransaction
 import kz.mihael3d.rickandmortycharacters.data.api.EpisodeApi
 import kz.mihael3d.rickandmortycharacters.data.db.AppDB
 import kz.mihael3d.rickandmortycharacters.data.model.entites.Episode
-import kz.mihael3d.rickandmortycharacters.data.model.entites.PageKey
+import kz.mihael3d.rickandmortycharacters.data.model.entites.EpisodePageKey
 import java.lang.Exception
 
 @ExperimentalPagingApi
 class EpisodeRemoteMediator(val servise: EpisodeApi, val db: AppDB): RemoteMediator<Int, Episode>() {
     private val episodeDao = db.episodeDao()
-    private val pageKeyDao = db.pageKeyDao()
+    private val pageKeyDao = db.episodePageKeyDao()
 
 
     override suspend fun load(
@@ -29,17 +29,17 @@ class EpisodeRemoteMediator(val servise: EpisodeApi, val db: AppDB): RemoteMedia
                    return MediatorResult.Success(endOfPaginationReached = true)
                LoadType.APPEND -> {
                    val lastItem = state.lastItemOrNull()
-                   val remotetKey: PageKey? = db.withTransaction {
+                   val remotetKeyEpisode: EpisodePageKey? = db.withTransaction {
                        if( lastItem?.id !=null ) {
                            pageKeyDao.getNextPageKey(lastItem.id)
                        } else null
                    }
 
-                   if (remotetKey?.nextPageUrl == null) {
+                   if (remotetKeyEpisode?.nextPageUrl == null) {
                        return MediatorResult.Success(endOfPaginationReached = true)
                    }
 
-                   val uri = Uri.parse(remotetKey.nextPageUrl)
+                   val uri = Uri.parse(remotetKeyEpisode.nextPageUrl)
                    val nextPageQuery = uri.getQueryParameter("page")
                    nextPageQuery?.toInt()
                }
@@ -58,7 +58,7 @@ class EpisodeRemoteMediator(val servise: EpisodeApi, val db: AppDB): RemoteMedia
 
                results?.forEach {
                    it.page = loadKey
-                   pageKeyDao.insertOrReplace(PageKey( it.id, pageInfo?.next))
+                   pageKeyDao.insertOrReplace(EpisodePageKey( it.id, pageInfo?.next))
                }
                results?.let { episodeDao.insertAll(it) }
            }

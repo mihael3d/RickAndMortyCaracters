@@ -1,6 +1,5 @@
 package kz.mihael3d.rickandmortycharacters.data.api
 
-import androidx.paging.PagingSource
 import kz.mihael3d.rickandmortycharacters.data.model.PageResponse
 import kz.mihael3d.rickandmortycharacters.data.model.entites.Episode
 import retrofit2.Response
