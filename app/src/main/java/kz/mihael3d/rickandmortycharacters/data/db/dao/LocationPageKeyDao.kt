@@ -4,8 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import kz.mihael3d.rickandmortycharacters.data.model.entites.EpisodePageKey
-import kz.mihael3d.rickandmortycharacters.data.model.entites.LocationPageKey
+import kz.mihael3d.rickandmortycharacters.data.locations.local.LocationPageKey
 
 @Dao
 interface LocationPageKeyDao {

@@ -2,19 +2,15 @@ package kz.mihael3d.rickandmortycharacters.screens.main.tabs.episodes
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.core.view.get
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.paging.LoadState
-import androidx.paging.PagingDataAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.*
 import kz.mihael3d.rickandmortycharacters.R
 import kz.mihael3d.rickandmortycharacters.databinding.FragmentEpisodesBinding
-import kz.mihael3d.rickandmortycharacters.screens.main.tabs.characters.PagingLoadStateAdapter
+import kz.mihael3d.rickandmortycharacters.presentation.PagingLoadStateAdapter
 import javax.inject.Inject
 
 @AndroidEntryPoint

@@ -9,9 +9,9 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import kz.mihael3d.rickandmortycharacters.data.api.CharacterApi
+import kz.mihael3d.rickandmortycharacters.data.characters.remote.CharacterApi
 import kz.mihael3d.rickandmortycharacters.data.api.EpisodeApi
-import kz.mihael3d.rickandmortycharacters.data.api.LocationsApi
+import kz.mihael3d.rickandmortycharacters.data.locations.remote.LocationsApi
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

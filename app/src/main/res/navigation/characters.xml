@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/charactersFragment"
-        android:name="kz.mihael3d.rickandmortycharacters.screens.main.tabs.characters.CharactersFragment"
+        android:name="kz.mihael3d.rickandmortycharacters.presentation.character.view.CharactersFragment"
         android:label="fragment_characters"
         tools:layout="@layout/fragment_characters" >
         <action
@@ -28,7 +28,7 @@
         tools:layout="@layout/fragment_character_detail" >
         <argument
             android:name="character"
-            app:argType="kz.mihael3d.rickandmortycharacters.data.model.Character"
+            app:argType="kz.mihael3d.rickandmortycharacters.domain.characters.models.Character"
             app:nullable="false" />
         <argument
             android:name="ShowAppBar"

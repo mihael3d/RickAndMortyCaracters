@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/tabs_graph"
-    app:startDestination="@id/locations">
+    app:startDestination="@id/characters">
 
     <include  app:graph="@navigation/characters" />
     <include  app:graph="@navigation/episodes" />

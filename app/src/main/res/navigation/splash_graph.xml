@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_splash" />
     <activity
         android:id="@+id/mainActivity"
-        android:name="kz.mihael3d.rickandmortycharacters.screens.main.MainActivity"
+        android:name="kz.mihael3d.rickandmortycharacters.presentation.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
 </navigation>

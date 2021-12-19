@@ -1,9 +1,12 @@
 package kz.mihael3d.rickandmortycharacters.data.model.entites
 
+import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @Entity(tableName = "episodes")
 data class Episode(
     @PrimaryKey val id: Int,
@@ -12,4 +15,4 @@ data class Episode(
     @SerializedName("code", alternate = ["episode"]) val code: String,
     val characters: List<String>,
     var page: Int?
-)
+) : Parcelable

@@ -23,8 +23,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".screens.main.MainActivity"
+            android:name="kz.mihael3d.rickandmortycharacters.presentation.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing"
             android:exported="false" />
     </application>
 
 </manifest>
+
+<!--    android:windowSoftInputMode="adjustResize"-->

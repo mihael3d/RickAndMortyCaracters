@@ -35,6 +35,6 @@
         <argument
             android:name="character"
             app:nullable="false"
-            app:argType="kz.mihael3d.rickandmortycharacters.data.model.Character" />
+            app:argType="kz.mihael3d.rickandmortycharacters.domain.characters.models.Character" />
     </fragment>
 </navigation>

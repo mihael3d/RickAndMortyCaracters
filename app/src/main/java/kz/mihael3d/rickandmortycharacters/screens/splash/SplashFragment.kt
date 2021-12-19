@@ -8,7 +8,7 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.*
 import kz.mihael3d.rickandmortycharacters.R
 import kz.mihael3d.rickandmortycharacters.databinding.FragmentSplashBinding
-import kz.mihael3d.rickandmortycharacters.screens.main.MainActivity
+import kz.mihael3d.rickandmortycharacters.presentation.MainActivity
 
 
 class splashFragment : Fragment(R.layout.fragment_splash) {

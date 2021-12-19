@@ -1,10 +1,8 @@
 package kz.mihael3d.rickandmortycharacters.data.repository.episodes
 
-import androidx.paging.ExperimentalPagingApi
-import androidx.paging.Pager
-import androidx.paging.PagingConfig
-import androidx.paging.PagingData
+import androidx.paging.*
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 import kz.mihael3d.rickandmortycharacters.data.api.EpisodeApi
 import kz.mihael3d.rickandmortycharacters.data.db.AppDB
 import kz.mihael3d.rickandmortycharacters.data.model.entites.Episode
@@ -24,14 +22,7 @@ class EpisodesERepositoryImpl
     ) {
         db.episodeDao().getEpisodesPagingSource()
     }.flow
-//
-//    {
-//        val episodeDao = db.episodeDao()
-//        val pager = Pager(
-//            config = PagingConfig(pageSize = 20, prefetchDistance = 2),
-//            remoteMediator = EpisodeRemoteMediator(service,db)
-//        ){episodeDao.getEpisodesPagingSource()}
-//
-//        return pager.flow
-//    }
+
+
+
 }
