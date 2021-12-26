@@ -60,9 +60,7 @@ class LocationRemoteMediator(val service: LocationsApi, val db: AppDB): RemoteMe
                     pageKeyDao.insertOrReplace(LocationPageKey( it.id, pageInfo?.next))
                 }
                 val locationEntities = results?.map {it.toEntity() }
-                locationEntities?.forEach{
-                    it.page = loadKey
-                }
+                locationEntities?.forEach{it.page = loadKey }
                 locationEntities?.let { locationDao.insertAll(it) }
             }
 

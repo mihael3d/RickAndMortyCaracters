@@ -16,8 +16,13 @@ interface CharacterApi {
     ): Response<PageResponse<CharacterDto>>
 
     @GET("character/")
-    suspend fun searchCharacter(
+    suspend fun searchCharacterByName(
         @Query("name") name: String,
+        @Query("page") page: Int
+    ): Response<PageResponse<CharacterDto>>
+
+    @GET("character/")
+    suspend fun searchCharacter(
         @Query("page") page: Int
     ): Response<PageResponse<CharacterDto>>
 }

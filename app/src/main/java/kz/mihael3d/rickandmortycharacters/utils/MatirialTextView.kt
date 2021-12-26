@@ -1,14 +1,32 @@
 package kz.mihael3d.rickandmortycharacters.utils
 
+import androidx.annotation.ColorRes
+import androidx.core.content.ContextCompat
 import com.google.android.material.textview.MaterialTextView
 import kz.mihael3d.rickandmortycharacters.R
-import kz.mihael3d.rickandmortycharacters.data.model.Status
+import kz.mihael3d.rickandmortycharacters.data.characters.Status
 
 fun setDrawableToMaterialTextView(view:MaterialTextView, status: Status){
-    when(status){
-        Status.ALIVE -> view.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_profile,0,0,0)
-        Status.DEAD -> view.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_dashboard,0,0,0)
-        Status.UNKNOWN -> view.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_settings,0,0,0)
+
+    with(view) {
+        when (status) {
+            Status.ALIVE -> {
+                setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_alive2, 0, 0, 0)
+                setDrawableLeft(R.color.statusAliveColor)
+            }
+            Status.DEAD -> {
+                setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_status_ded, 0, 0, 0)
+                setDrawableLeft(R.color.statusDedColor)}
+            Status.UNKNOWN -> {
+                setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_confuse, 0, 0, 0)
+            setDrawableLeft(R.color.statusUnknownColor)}
+        }
     }
 }
+
+fun MaterialTextView.setDrawableLeft(@ColorRes res: Int) {
+    if (compoundDrawables[0] == null) return
+    compoundDrawables[0].setTint(ContextCompat.getColor(context, res))
+}
+
 

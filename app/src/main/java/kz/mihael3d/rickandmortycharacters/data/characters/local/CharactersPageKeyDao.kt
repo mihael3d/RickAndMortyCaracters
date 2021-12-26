@@ -4,7 +4,6 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import kz.mihael3d.rickandmortycharacters.data.pagination.CharactersPageKey
 
 @Dao
 interface CharactersPageKeyDao {

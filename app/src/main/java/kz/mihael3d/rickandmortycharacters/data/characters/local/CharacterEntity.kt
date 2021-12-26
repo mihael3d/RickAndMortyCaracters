@@ -6,7 +6,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.android.parcel.Parcelize
 import kz.mihael3d.rickandmortycharacters.data.characters.Gender
-import kz.mihael3d.rickandmortycharacters.data.model.Status
+import kz.mihael3d.rickandmortycharacters.data.characters.Status
 
 @Parcelize
 @Entity(tableName = CharacterEntity.TABLE_NAME)

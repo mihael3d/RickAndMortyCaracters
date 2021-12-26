@@ -4,25 +4,49 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable-v24/ic_arrow_right_white_36dp.xml" value="0.20208333333333334" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic__unknown.xml" value="0.13802083333333334" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_alive.xml" value="0.13802083333333334" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_alive2.xml" value="0.3416666666666667" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_characters.xml" value="0.3351851851851852" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_confuse.xml" value="0.3416666666666667" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_dashboard.xml" value="0.3769230769230769" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_ded.xml" value="0.13802083333333334" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_done.xml" value="0.3828125" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_episodes.xml" value="0.36944444444444446" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_fav.xml" value="0.3828125" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_locations.xml" value="0.36944444444444446" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_profile.xml" value="0.30277777777777776" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_search_grey_16.xml" value="0.3592592592592593" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_settings.xml" value="0.30277777777777776" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_share.xml" value="0.3828125" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_status_alive_1.xml" value="0.36944444444444446" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_status_ded.xml" value="0.15" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_status_ded_2.xml" value="0.15" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_status_unknown_1.xml" value="0.36944444444444446" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_status_unknown_2.xml" value="0.36944444444444446" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/ic_status_unknown_3.xml" value="0.36944444444444446" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/splash.xml" value="0.3769230769230769" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/drawable/splash_gradient.xml" value="0.22135416666666666" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
-        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/fragment_character_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/character_details_fragment_end.xml" value="0.17831813576494426" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/custom_share_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/fragment_character_detail.xml" value="0.25" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/fragment_character_motion.xml" value="0.33469202898550726" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/fragment_characters.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/fragment_episodes.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/fragment_locations.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/fragment_splash.xml" value="0.25" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/fragment_tabs.xml" value="0.36666666666666664" />
-        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/item_character.xml" value="0.35104166666666664" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/ic_fav.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/item_character.xml" value="0.25" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/item_charater_liner_layout.xml" value="0.35104166666666664" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/item_episode.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/item_location.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/item_location_in_charcter_detail.xml" value="0.3482789855072464" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/item_network_state.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/multiple_animation_example.xml" value="0.18" />
+        <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/layout/multiple_animation_example_end.xml" value="0.15" />
         <entry key="..\:/AndroidWorkProjects/RickAndMortyCaracters/app/src/main/res/menu/tabs_menu.xml" value="0.36666666666666664" />
       </map>
     </option>

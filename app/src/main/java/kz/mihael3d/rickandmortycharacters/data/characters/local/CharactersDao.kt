@@ -12,15 +12,23 @@ interface CharactersDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(list: List<CharacterEntity>)
 
-    @Query("""SELECT *
-        FROM ${CharacterEntity.TABLE_NAME}
-        WHERE ${CharacterEntity.CHARACTER_NAME} LIKE :name 
-        ORDER BY ${CharacterEntity.CHARACTER_ID}  ASC
-        
-        """)
-    fun getCharactersPagingSource(name: String): PagingSource<Int, CharacterEntity>
+//    @Query("""SELECT *
+//        FROM ${CharacterEntity.TABLE_NAME}
+//        WHERE ${CharacterEntity.CHARACTER_NAME} LIKE  '%' || :name || '%'
+//        ORDER BY ${CharacterEntity.CHARACTER_ID}  ASC
+//        """)
+//    fun getCharactersByNamePagingSource(name: String): PagingSource<Int, CharacterEntity>
 
-    @Query("DELETE FROM characters")
+
+    @Query("SELECT * FROM ${CharacterEntity.TABLE_NAME}  WHERE ${CharacterEntity.CHARACTER_NAME} LIKE  :name ORDER BY ${CharacterEntity.CHARACTER_ID}  ASC")
+    fun getCharactersByNamePagingSource(name: String): PagingSource<Int, CharacterEntity>
+
+    @Query("SELECT * FROM ${CharacterEntity.TABLE_NAME}  WHERE ${CharacterEntity.CHARACTER_ID} LIKE '%' ||:id ||'%' ORDER BY ${CharacterEntity.CHARACTER_ID}  ASC")
+    fun getCharactersByIdPagingSource(id: Int): PagingSource<Int, CharacterEntity>
+
+    @Query("SELECT * FROM ${CharacterEntity.TABLE_NAME}")
+    fun getCharactersPagingSource(): PagingSource<Int, CharacterEntity>
+
+    @Query("DELETE  FROM characters")
     suspend fun clearAll()
 }
-//LIKE '%' || :name || '%'

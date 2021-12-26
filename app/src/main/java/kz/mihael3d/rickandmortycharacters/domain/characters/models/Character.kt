@@ -3,13 +3,13 @@ package kz.mihael3d.rickandmortycharacters.domain.characters.models
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 import kz.mihael3d.rickandmortycharacters.data.characters.Gender
-import kz.mihael3d.rickandmortycharacters.data.model.Status
+import kz.mihael3d.rickandmortycharacters.data.characters.Status
 
 /**
  * Business class of Character
  */
 @Parcelize
-class Character(
+data class Character(
     val id: Int,
     val name: String,
     val species: String,
@@ -23,4 +23,5 @@ class Character(
     val originName: String,
     val originUrl: String,
     val episode: List<String>,
-) : Parcelable
+)
+    : Parcelable

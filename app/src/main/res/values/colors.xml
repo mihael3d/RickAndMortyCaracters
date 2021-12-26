@@ -12,4 +12,11 @@
     <color name="textColorSecondary">#94000000</color>
     <color name="colorBackground">#F3F4F5</color>
     <color name="textColorPrimary">#C7000000</color>
+    <color name="statusDedColor">#D50000</color>
+    <color name="statusAliveColor">#003C0D</color>
+    <color name="statusUnknownColor">#616161</color>
+
+    <color name="akcentColor">#90caf9</color>
+
+
 </resources>

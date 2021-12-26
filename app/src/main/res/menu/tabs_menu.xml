@@ -4,11 +4,11 @@
 
     <item android:id="@+id/characters"
         android:title="Characters"
-        android:icon="@drawable/ic_profile"/>
+        android:icon="@drawable/ic_characters"/>
     <item android:id="@+id/episodes"
         android:title="Episodes"
-        android:icon="@drawable/ic_dashboard"/>
+        android:icon="@drawable/ic_episodes"/>
     <item android:id="@+id/locations"
         android:title="Locations"
-        android:icon="@drawable/ic_settings"/>
+        android:icon="@drawable/ic_locations"/>
 </menu>

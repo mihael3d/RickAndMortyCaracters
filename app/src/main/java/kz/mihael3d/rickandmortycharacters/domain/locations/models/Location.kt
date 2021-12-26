@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 /**
  * Business class of Location
  */
-class Location(
+data class Location(
     val id: Int = 0,
     val name: String = "",
     val type: String = "",

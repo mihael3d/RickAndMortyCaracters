@@ -1,8 +1,7 @@
 package kz.mihael3d.rickandmortycharacters.data.db.convectors
 
 import androidx.room.TypeConverter
-import com.google.gson.annotations.SerializedName
-import kz.mihael3d.rickandmortycharacters.data.model.Status
+import kz.mihael3d.rickandmortycharacters.data.characters.Status
 
 class CharacterStatusTypeConvertor {
     @TypeConverter

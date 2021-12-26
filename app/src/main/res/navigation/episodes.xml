@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/episodesFragment"
-        android:name="kz.mihael3d.rickandmortycharacters.screens.main.tabs.episodes.EpisodesFragment"
+        android:name="kz.mihael3d.rickandmortycharacters.presentation.episodes.view.EpisodesFragment"
         android:label="fragment_episodes"
         tools:layout="@layout/fragment_episodes" />
     <argument

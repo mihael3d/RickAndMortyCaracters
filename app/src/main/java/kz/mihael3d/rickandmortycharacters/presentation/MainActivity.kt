@@ -11,7 +11,6 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 import kz.mihael3d.rickandmortycharacters.R
-import kz.mihael3d.rickandmortycharacters.screens.main.tabs.TabsFragment
 import kz.mihael3d.rickandmortycharacters.databinding.ActivityMainBinding
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

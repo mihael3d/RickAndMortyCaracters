@@ -2,7 +2,7 @@ package kz.mihael3d.rickandmortycharacters.data.characters.remote
 
 import com.google.gson.annotations.SerializedName
 import kz.mihael3d.rickandmortycharacters.data.characters.Gender
-import kz.mihael3d.rickandmortycharacters.data.model.Status
+import kz.mihael3d.rickandmortycharacters.data.characters.Status
 
 /**
  * Class of Character coming from the api
@@ -42,5 +42,4 @@ class CharacterDto(
     val episode: List<String> = emptyList(),
 
     var page: Int?
-)  {
-}
+)

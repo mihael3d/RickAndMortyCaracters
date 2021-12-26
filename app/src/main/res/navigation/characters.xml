@@ -23,9 +23,9 @@
     </fragment>
     <fragment
         android:id="@+id/characterDetailFragment2"
-        android:name="kz.mihael3d.rickandmortycharacters.screens.main.detail.CharacterDetailFragment"
+        android:name="kz.mihael3d.rickandmortycharacters.presentation.charcterdetail.view.CharacterDetailFragment"
         android:label="fragment_character_detail"
-        tools:layout="@layout/fragment_character_detail" >
+        tools:layout="@layout/fragment_character_detail_simple" >
         <argument
             android:name="character"
             app:argType="kz.mihael3d.rickandmortycharacters.domain.characters.models.Character"

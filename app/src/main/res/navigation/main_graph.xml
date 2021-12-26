@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/tabsFragment"
-        android:name="kz.mihael3d.rickandmortycharacters.screens.main.tabs.TabsFragment"
+        android:name="kz.mihael3d.rickandmortycharacters.presentation.TabsFragment"
         android:label="fragment_tabs"
         tools:layout="@layout/fragment_tabs" >
         <action
@@ -29,9 +29,9 @@
     </fragment>
     <fragment
         android:id="@+id/characterDetailFragment"
-        android:name="kz.mihael3d.rickandmortycharacters.screens.main.detail.CharacterDetailFragment"
+        android:name="kz.mihael3d.rickandmortycharacters.presentation.charcterdetail.view.CharacterDetailFragment"
         android:label="fragment_character_detail"
-        tools:layout="@layout/fragment_character_detail" >
+        tools:layout="@layout/fragment_character_detail_simple" >
         <argument
             android:name="character"
             app:nullable="false"

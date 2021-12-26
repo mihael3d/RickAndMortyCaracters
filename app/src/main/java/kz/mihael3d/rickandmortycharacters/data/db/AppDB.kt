@@ -5,20 +5,21 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import kz.mihael3d.rickandmortycharacters.data.pagination.CharactersPageKey
+import kz.mihael3d.rickandmortycharacters.data.characters.local.CharactersPageKey
 import kz.mihael3d.rickandmortycharacters.data.db.convectors.CharacterStatusTypeConvertor
 import kz.mihael3d.rickandmortycharacters.data.db.convectors.StringConverter
-import kz.mihael3d.rickandmortycharacters.data.db.dao.*
 import kz.mihael3d.rickandmortycharacters.data.characters.local.CharacterEntity
 import kz.mihael3d.rickandmortycharacters.data.characters.local.CharactersDao
 import kz.mihael3d.rickandmortycharacters.data.characters.local.CharactersPageKeyDao
-import kz.mihael3d.rickandmortycharacters.data.locations.local.LocationEntity
-import kz.mihael3d.rickandmortycharacters.data.locations.local.LocationPageKey
-import kz.mihael3d.rickandmortycharacters.data.model.entites.*
+import kz.mihael3d.rickandmortycharacters.data.episodes.local.EpisodeEntity
+import kz.mihael3d.rickandmortycharacters.data.episodes.local.EpisodeDao
+import kz.mihael3d.rickandmortycharacters.data.episodes.pagination.EpisodePageKey
+import kz.mihael3d.rickandmortycharacters.data.episodes.pagination.EpisodePageKeyDao
+import kz.mihael3d.rickandmortycharacters.data.locations.local.*
 
 @Database(entities = [
     CharacterEntity::class, CharactersPageKey::class,
-    Episode::class, EpisodePageKey::class,
+    EpisodeEntity::class, EpisodePageKey::class,
     LocationEntity::class, LocationPageKey::class
                      ], version = 1, exportSchema = false)
 @TypeConverters(
