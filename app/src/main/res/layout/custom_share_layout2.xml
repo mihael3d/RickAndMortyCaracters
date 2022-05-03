@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:background="@color/akcentColor">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_a_third_of_the_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.333" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_a_two_third_of_the_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.666" />
+
+    <ImageView
+        android:id="@+id/seenImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:tint="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_a_third_of_the_screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_done" />
+
+    <ImageView
+        android:id="@+id/favImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:padding="1dp"
+        android:tint="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_a_two_third_of_the_screen"
+        app:layout_constraintStart_toStartOf="@+id/guideline_a_third_of_the_screen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_fav" />
+
+    <ImageView
+        android:id="@+id/shareImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:padding="1dp"
+        android:tint="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_a_two_third_of_the_screen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_share" />
+
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif-monospace"
+        android:maxLines="2"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="15sp"
+        app:autoSizeMinTextSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_a_third_of_the_screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seenImage"
+        tools:text="Alive" />
+
+    <TextView
+        android:id="@+id/tv_species"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:layout_marginTop="8dp"
+
+        android:fontFamily="serif-monospace"
+        android:maxLines="2"
+
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="15sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_a_two_third_of_the_screen"
+        app:layout_constraintStart_toStartOf="@+id/guideline_a_third_of_the_screen"
+        app:layout_constraintTop_toBottomOf="@+id/favImage"
+        tools:text="Human" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center|center"
+        android:maxLines="2"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="15sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_a_two_third_of_the_screen"
+        app:layout_constraintTop_toBottomOf="@+id/shareImage"
+        tools:text="Male" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
